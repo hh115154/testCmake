@@ -1,0 +1,38 @@
+{   
+    "version": "2.0.0",
+    "options": {
+        "cwd": "${workspaceFolder}/build"
+    },
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "cmake",
+            "command": "cmake",
+            "args": [
+                "-G",
+                "MinGW Makefiles",
+                "..",
+                "-DCMAKE_BUILD_TYPE=Debug"
+            ],
+        },
+        {
+            "label": "make",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "command": "mingw32-make",//linux 用make
+            "args": [
+
+            ],
+        },
+        {
+            "label": "C/C++: g++.exe build active file",
+            "dependsOn":[
+                "cmake",
+                "make"
+            ]
+        }
+    ],
+
+}

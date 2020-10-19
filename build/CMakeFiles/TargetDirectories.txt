@@ -1,0 +1,3 @@
+C:/Users/yangh/Desktop/testCmake/build/CMakeFiles/out.dir
+C:/Users/yangh/Desktop/testCmake/build/CMakeFiles/edit_cache.dir
+C:/Users/yangh/Desktop/testCmake/build/CMakeFiles/rebuild_cache.dir
